@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="botones">
+        <item name="android:width">@dimen/largo</item>
+        <item name="android:height">@dimen/alto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color1</item>
+        <item name="backgroundTint">@color/color4</item>
+    </style>
+    <style name="etiquetas">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color4</item>
+        <item name="android:height">@dimen/etiquetaalto</item>
+        <item name="android:width">@dimen/etiquetalargo</item>
+        <item name="android:gravity">bottom|right</item>
+    </style>
+    <style name="editviews">
+        <item name="android:width">@dimen/editlargo</item>
+        <item name="android:height">@dimen/editalto</item>
+        <item name="android:text">@string/vacio</item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+</resources>

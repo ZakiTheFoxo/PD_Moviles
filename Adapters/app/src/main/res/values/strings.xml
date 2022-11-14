@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Adapters</string>
+    <string-array name="ciudades">
+        <item>Puebla</item>
+        <item>CDMX</item>
+        <item>Jalapa</item>
+        <item>Guadalajara</item>
+        <item>Morelia</item>
+        <item>Villahermosa</item>
+        <item>Veracruz</item>
+        <item>Torreon</item>
+        <item>Zapopan</item>
+        <item>Acapulco</item>
+        <item>Matamoros</item>
+        <item>Tlaxco</item>
+        <item>Mexicali</item>
+        <item>Ciudad Juarez</item>
+        <item>Merida</item>
+        <item>Zacatecas</item>
+    </string-array>
+</resources>

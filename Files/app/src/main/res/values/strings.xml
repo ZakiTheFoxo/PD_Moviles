@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Demo de Archivos</string>
+    <string name="title_activiy_main">Archivos</string>
+    <string name="init">Lectura de datos:</string>
+</resources>

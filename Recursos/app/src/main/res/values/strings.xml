@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recursos</string>
+    <string name="ok">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="imprimir">Imprimir</string>
+    <string name="de">De:</string>
+    <string name="para">Para:</string>
+    <string name="asunto">Asunto</string>
+    <string name="vacio"></string>
+    <string name="mensaje">Mensaje</string>
+</resources>

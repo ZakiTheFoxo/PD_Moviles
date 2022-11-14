@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Resources</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="imprimir">Print</string>
+    <string name="de">From:</string>
+    <string name="para">To:</string>
+    <string name="asunto">Subject</string>
+    <string name="vacio"></string>
+    <string name="mensaje">Message</string>
+</resources>

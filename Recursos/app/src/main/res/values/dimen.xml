@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="largo">130dp</dimen>
+    <dimen name="alto">55dp</dimen>
+    <dimen name="etiquetalargo">100sp</dimen>
+    <dimen name="etiquetaalto">40sp</dimen>dim
+    <dimen name="editlargo">290sp</dimen>
+    <dimen name="editalto">40sp</dimen>
+</resources>

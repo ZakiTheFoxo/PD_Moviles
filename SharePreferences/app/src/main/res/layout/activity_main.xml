@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Title"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtNombre" />
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtHint"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:textStyle="italic">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtCordX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CordX" />
+
+    <EditText
+        android:id="@+id/edtCordX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtX"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txtCordY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CoordY" />
+
+    <EditText
+        android:id="@+id/edtCordY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtY"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edtReporte"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/txtNombre"
+        android:inputType="textMultiLine"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+</LinearLayout>
