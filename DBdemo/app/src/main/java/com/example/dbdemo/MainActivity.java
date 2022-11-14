@@ -2,6 +2,7 @@ package com.example.dbdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.app.ListActivity;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -23,10 +24,10 @@ public class MainActivity extends ListActivity {
         super.onCreate(savedInstanceState);
 
         db = new DataBaseHelper(this);
-        constantsCursor = db.getReadableDatabase().rawQuery("SELECT _ID title, value FROM constants ORDER BY title", null);
+        constantsCursor = db.getReadableDatabase().rawQuery("SELECT _ID title, value FROM constants ORDER BY title",null);
+        ListAdapter adapter = new SimpleCursorAdapter(this,R.layout.row, constantsCursor, new String[] {DataBaseHelper.TITLE, DataBaseHelper.VALUE },
+                new int[] { R.id.txtTitle, R.id.txtValue});
 
-        ListAdapter adapter = new SimpleCursorAdapter(  this, R.layout.row, constantsCursor, new String[] {DataBaseHelper.TITLE, DataBaseHelper.VALUE},
-                                                        new int[] {R.id.txtTitle, R.id.txtValue});
         setListAdapter(adapter);
         registerForContextMenu(getListView());
     }
@@ -70,5 +71,7 @@ public class MainActivity extends ListActivity {
 
     private void add() {
         LayoutInflater inflater = LayoutInflater.from(this);
+        View addView = inflater.inflate(R.layout.add_edit, null);
+        final DialogWrapper dialogWrapper = new DialogWrapper(addView);
     }
 }
