@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Lista de Sensores</string>
+    <string name="lista">Este dispositivo tiene los siguientes sensores: </string>
+</resources>
