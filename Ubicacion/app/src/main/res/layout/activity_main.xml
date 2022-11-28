@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="4dp"
+        android:text="@string/latitudeLabel"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lblLatitud"
+        android:layout_toEndOf="@id/lblLatitud"
+        android:textColor="#ff0000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lblLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblLatitud"
+        android:layout_marginEnd="4dp"
+        android:text="@string/LongitudeLabel"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lblLongitud"
+        android:layout_toEndOf="@id/lblLongitud"
+        android:textColor="#ff0000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lblProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblLongitud"
+        android:layout_marginEnd="4dp"
+        android:text="@string/providerLabel"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lblProvider"
+        android:layout_toEndOf="@id/lblProvider"
+        android:textColor="#ff0000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lblAccuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblProvider"
+        android:layout_marginEnd="4dp"
+        android:text="@string/accuracyLabel"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtAccuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lblAccuracy"
+        android:layout_toEndOf="@id/lblAccuracy"
+        android:textColor="#ff0000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lblAccuracyUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lblAccuracy"
+        android:layout_marginStart="4sp"
+        android:layout_toEndOf="@id/txtAccuracy"
+        android:text="@string/metersUnit"
+        android:textColor="#ff00a0"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lblTimeToFix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblAccuracy"
+        android:layout_marginEnd="4sp"
+        android:text="@string/timeToFixLabel"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtTimeToFix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lblTimeToFix"
+        android:layout_toEndOf="@id/lblTimeToFix"
+        android:textColor="#ff0000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lblTimeToFixUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lblTimeToFix"
+        android:layout_marginStart="4sp"
+        android:layout_toEndOf="@id/txtTimeToFix"
+        android:text="@string/secondsUnit"
+        android:textColor="#ff00a0"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lblEnableProviders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTimeToFix"
+        android:layout_marginEnd="4dp"
+        android:text="@string/providerLabel"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtEnabledProviders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lblEnableProviders"
+        android:layout_toEndOf="@id/lblEnableProviders"
+        android:textColor="#ff0000"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnChangeLocationProviderSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/changeLocationProvidersSettingsText" />
+
+    <Button
+        android:id="@+id/btnShowOnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnChangeLocationProviderSettings"
+        android:text="@string/showPosition" />
+</RelativeLayout>
