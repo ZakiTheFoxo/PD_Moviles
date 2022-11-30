@@ -10,6 +10,8 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.SystemClock;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         btnChangeEnabledProviders.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
             }
         });
     }
@@ -78,12 +80,46 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                     e.printStackTrace();
                 }
             }
+
+            txtEnabledProviders.setText(stringBuffer);
+        }
+
+        upTimeToResume = SystemClock.uptimeMillis();
+        txtLongitud.setText("");
+        txtLatitud.setText("");
+        txtAccuracy.setText("");
+        txtProvider.setText("");
+        txtTimeToFix.setText("");
+
+        findViewById(R.id.lblTimeToFixUnits).setVisibility(View.GONE);
+        findViewById(R.id.lblAccuracyUnits).setVisibility(View.GONE);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        try {
+            locationManager.removeUpdates(this);
+        } catch (SecurityException e) {
+            e.printStackTrace();
         }
     }
 
     @Override
     public void onLocationChanged(@NonNull Location location) {
+        lat = String.valueOf(location.getLatitude());
+        lon = String.valueOf(location.getLongitude());
 
+        txtLatitud.setText(lat);
+        txtLongitud.setText(lon);
+        txtProvider.setText(String.valueOf(location.getProvider()));
+        txtAccuracy.setText(String.valueOf(location.getAccuracy()));
+
+        long timeToFix = SystemClock.uptimeMillis() - upTimeToResume;
+
+        findViewById(R.id.lblTimeToFixUnits).setVisibility(View.VISIBLE);
+        findViewById(R.id.lblAccuracyUnits).setVisibility(View.VISIBLE);
     }
 
     @Override
